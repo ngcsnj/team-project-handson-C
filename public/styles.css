@@ -52,13 +52,7 @@ footer {
     width: 100%;
     font-size: 0.9rem;
 }
-
-/* ログインフォームの中央寄せと整形 */
-#login-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
+/* 共通のフォーム要素 */
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -68,8 +62,21 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 0.5rem;
     box-sizing: border-box;
+}
+
+/* ログインフォーム専用 */
+#login-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* お問い合わせフォーム専用 */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
 }
